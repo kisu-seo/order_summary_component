@@ -1,0 +1,231 @@
+/***
+ * CSS Reset
+ * A modern CSS reset that removes default browser styles
+ * Version: 1.11.3 (2024-08-25)
+ * Source: https://github.com/elad2412/the-new-css-reset
+ */
+
+/* Base reset - removes all styles except display */
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Interactive elements */
+a,
+button {
+    cursor: revert;
+}
+
+/* Lists */
+ol,
+ul,
+menu,
+summary {
+    list-style: none;
+}
+
+ol {
+    counter-reset: revert;
+}
+
+/* Media */
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    loading: lazy;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Form elements */
+input,
+textarea {
+    -webkit-user-select: auto;
+}
+
+textarea {
+    white-space: revert;
+}
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* Preformatted text */
+:where(pre) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* Placeholders */
+::placeholder {
+    color: unset;
+}
+
+/* Hidden elements */
+:where([hidden]) {
+    display: none;
+}
+
+/* Content editable */
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* Draggable elements */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* Modal dialogs */
+:where(dialog:modal) {
+    all: revert;
+    box-sizing: border-box;
+}
+
+/* Details summary */
+::-webkit-details-marker {
+    display: none;
+}
+
+html {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    align-items: center;
+    background-color: #e0e8ff;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 375px;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 327px;
+    overflow: hidden;
+}
+
+.card__img {
+    margin-bottom: 32px;
+}
+
+.card__contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card__contents-title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: #1f2e55;
+}
+
+.card__contents-description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 24px;
+    color: #717fa6;
+    padding: 0 32px;
+}
+
+.card__contents-plan {
+    background-color: #f7f9ff;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    margin: 0 24px 24px;
+    padding: 16px;
+}
+
+.card__contents-img {
+    margin-right: auto;
+}
+
+.card__contents-plan-container {
+    margin-right: 50px;
+}
+
+.card__contents-plan-title {
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+    color: #1f2e55;
+    margin-bottom: 3px;
+}
+
+.card__contents-plan-price {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #717fa6;
+}
+
+.card__contents-plan-change {
+    font-size: 13px;
+    font-weight: 900;
+    text-align: right;
+    color: #382ae1;
+    text-decoration: underline;
+}
+
+.card__btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+.card__btn-container-proceed {
+    background-color: #382ae1;
+    border-radius: 11px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 15px 0;
+    margin-bottom: 24px;
+    box-shadow: 0 20px 10px rgba(56, 42, 255, 0.1);
+}
+
+.card__btn-container-cancel {
+    font-size: 15px;
+    font-weight: 900;
+    color: #717fa6;
+    margin-bottom: 32px;
+}
