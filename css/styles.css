@@ -169,18 +169,21 @@ body {
 .card__contents-plan {
     background-color: #f7f9ff;
     border-radius: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 24px 24px;
     padding: 16px;
 }
 
 .card__contents-img {
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 .card__contents-plan-container {
-    margin-right: 50px;
+    flex: 1;
 }
 
 .card__contents-plan-title {
@@ -228,4 +231,66 @@ body {
     font-weight: 900;
     color: #717fa6;
     margin-bottom: 32px;
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .card__contents-title {
+        font-size: 28px;
+    }
+
+    .card__contents-description {
+        font-size: 16px;
+        padding: 0 48px;
+        margin-bottom: 20px;
+    }
+
+    .card__contents-plan {
+        margin: 0 48px 32px;
+        padding: 25px 24px;
+    }
+
+    .card__contents-plan-title,
+    .card__contents-plan-price {
+        font-size: 16px;
+    }
+
+    .card__contents-plan-change {
+        font-size: 14px;
+    }
+
+    .card__btn-container {
+        margin: 0 48px;
+    }
+
+    .card__btn-container-proceed {
+        margin-bottom: 32px;
+    }
+
+    .card__contents-plan-change:hover {
+        color: #766cf1;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .card__btn-container-proceed:hover {
+        background-color: #766cf1;
+        cursor: pointer;
+    }
+
+    .card__btn-container-cancel {
+        margin-bottom: 48px;
+    }
+
+    .card__btn-container-cancel:hover {
+        color: #1f2e55;
+        cursor: pointer;
+    }
 }
