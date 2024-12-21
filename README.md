@@ -17,8 +17,8 @@
  
  ### Links
  
- - Solution URL: [Solution URL](https://github.com/kisu-seo/order_summary_content)
- - Live Site URL: [Live URL](https://kisu-seo.github.io/order_summary_content/)
+ - Solution URL: [Solution URL](https://github.com/kisu-seo/order_summary_component)
+ - Live Site URL: [Live URL](https://kisu-seo.github.io/order_summary_component/)
  
  ## My process
  
